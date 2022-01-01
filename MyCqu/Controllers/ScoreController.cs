@@ -24,7 +24,7 @@ public class ScoreController : ControllerBase
     {
         var json = await this.ScoreData(jwt);
         List<Score> scores = new List<Score>();
-        foreach (var term in json.Data)
+        foreach (var term in json.Data.AsObject())
         {
             foreach (var item in term.Value.AsArray())
             {

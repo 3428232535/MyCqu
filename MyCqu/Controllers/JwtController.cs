@@ -21,7 +21,7 @@ public class JwtController : ControllerBase
 
 
     [HttpPost("Token")]
-    public async Task<string> Token(JwtPostItem data)
+    public async Task<string> Token(JwtPayload data)
     {
         var username = data.username;
         var password = data.password;
@@ -58,7 +58,7 @@ public class JwtController : ControllerBase
     }
 }
 
-public record JwtPostItem(string username,string password);
+public record JwtPayload(string username,string password);
 
 internal static class AuthAes
 {
