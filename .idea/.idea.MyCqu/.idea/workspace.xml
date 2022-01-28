@@ -5,7 +5,36 @@
     <projectFile profileName="IIS Express">MyCqu/MyCqu.csproj</projectFile>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3fc7fb43-ac7f-41d5-ba1a-23ff85f43b82" name="Changes" comment="" />
+    <list default="true" id="3fc7fb43-ac7f-41d5-ba1a-23ff85f43b82" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.vs/MyCqu/DesignTimeBuild/.dtbcache.v2" beforeDir="false" afterPath="$PROJECT_DIR$/.vs/MyCqu/DesignTimeBuild/.dtbcache.v2" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.vs/MyCqu/v17/.futdcache.v1" beforeDir="false" afterPath="$PROJECT_DIR$/.vs/MyCqu/v17/.futdcache.v1" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.vs/MyCqu/v17/.suo" beforeDir="false" afterPath="$PROJECT_DIR$/.vs/MyCqu/v17/.suo" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.vs/MyCqu/v17/TestStore/0/000.testlog" beforeDir="false" afterPath="$PROJECT_DIR$/.vs/MyCqu/v17/TestStore/0/000.testlog" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MyCqu.Test/obj/Debug/net6.0/MyCqu.Test.csproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/MyCqu.Test/obj/Debug/net6.0/MyCqu.Test.csproj.AssemblyReference.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MyCqu.Test/obj/MyCqu.Test.csproj.nuget.dgspec.json" beforeDir="false" afterPath="$PROJECT_DIR$/MyCqu.Test/obj/MyCqu.Test.csproj.nuget.dgspec.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MyCqu.Test/obj/MyCqu.Test.csproj.nuget.g.props" beforeDir="false" afterPath="$PROJECT_DIR$/MyCqu.Test/obj/MyCqu.Test.csproj.nuget.g.props" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MyCqu.Test/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/MyCqu.Test/obj/project.assets.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MyCqu.Test/obj/project.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/MyCqu.Test/obj/project.nuget.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MyCqu.Test/obj/project.packagespec.json" beforeDir="false" afterPath="$PROJECT_DIR$/MyCqu.Test/obj/project.packagespec.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MyCqu.Test/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/MyCqu.Test/obj/rider.project.restore.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MyCqu/Controllers/JwtController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/MyCqu/Controllers/JwtController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MyCqu/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/MyCqu/Program.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MyCqu/bin/Debug/net6.0/MyCqu.dll" beforeDir="false" afterPath="$PROJECT_DIR$/MyCqu/bin/Debug/net6.0/MyCqu.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MyCqu/bin/Debug/net6.0/MyCqu.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/MyCqu/bin/Debug/net6.0/MyCqu.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MyCqu/bin/Debug/net6.0/ref/MyCqu.dll" beforeDir="false" afterPath="$PROJECT_DIR$/MyCqu/bin/Debug/net6.0/ref/MyCqu.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MyCqu/obj/Debug/net6.0/MyCqu.csproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/MyCqu/obj/Debug/net6.0/MyCqu.csproj.AssemblyReference.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MyCqu/obj/Debug/net6.0/MyCqu.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/MyCqu/obj/Debug/net6.0/MyCqu.csproj.CoreCompileInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MyCqu/obj/Debug/net6.0/MyCqu.dll" beforeDir="false" afterPath="$PROJECT_DIR$/MyCqu/obj/Debug/net6.0/MyCqu.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MyCqu/obj/Debug/net6.0/MyCqu.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/MyCqu/obj/Debug/net6.0/MyCqu.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MyCqu/obj/Debug/net6.0/ref/MyCqu.dll" beforeDir="false" afterPath="$PROJECT_DIR$/MyCqu/obj/Debug/net6.0/ref/MyCqu.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MyCqu/obj/MyCqu.csproj.nuget.dgspec.json" beforeDir="false" afterPath="$PROJECT_DIR$/MyCqu/obj/MyCqu.csproj.nuget.dgspec.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MyCqu/obj/MyCqu.csproj.nuget.g.props" beforeDir="false" afterPath="$PROJECT_DIR$/MyCqu/obj/MyCqu.csproj.nuget.g.props" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MyCqu/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/MyCqu/obj/project.assets.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MyCqu/obj/project.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/MyCqu/obj/project.nuget.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MyCqu/obj/project.packagespec.json" beforeDir="false" afterPath="$PROJECT_DIR$/MyCqu/obj/project.packagespec.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MyCqu/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/MyCqu/obj/rider.project.restore.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MyCqu/obj/staticwebassets.pack.sentinel" beforeDir="false" afterPath="$PROJECT_DIR$/MyCqu/obj/staticwebassets.pack.sentinel" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -89,6 +118,7 @@
       <workItem from="1640878055366" duration="6555000" />
       <workItem from="1640917585874" duration="1879000" />
       <workItem from="1640926051587" duration="2910000" />
+      <workItem from="1641611824467" duration="121000" />
     </task>
     <task id="LOCAL-00001" summary="jwt v1,score v1,exam finish crypto">
       <created>1640883634080</created>
@@ -136,24 +166,5 @@
     <MESSAGE value="jwt v1,score v1,exam finish crypto" />
     <MESSAGE value="jwt,score,examSchedule" />
     <option name="LAST_COMMIT_MESSAGE" value="jwt,score,examSchedule" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/MyCqu/Controllers/JwtController.cs</url>
-          <line>25</line>
-          <properties documentPath="D:\Code\csharp\MyCqu\MyCqu\Controllers\JwtController.cs" initialLine="25" containingFunctionPresentation="method 'Token'">
-            <startOffsets>
-              <option value="617" />
-            </startOffsets>
-            <endOffsets>
-              <option value="646" />
-            </endOffsets>
-          </properties>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
 </project>

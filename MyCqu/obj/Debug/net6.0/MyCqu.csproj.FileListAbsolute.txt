@@ -31,7 +31,6 @@ D:\Code\csharp\MyCqu\MyCqu\bin\Debug\net6.0\MyCqu.exe
 D:\Code\csharp\MyCqu\MyCqu\bin\Debug\net6.0\MyCqu.deps.json
 D:\Code\csharp\MyCqu\MyCqu\bin\Debug\net6.0\MyCqu.runtimeconfig.json
 D:\Code\csharp\MyCqu\MyCqu\bin\Debug\net6.0\MyCqu.dll
-D:\Code\csharp\MyCqu\MyCqu\bin\Debug\net6.0\ref\MyCqu.dll
 D:\Code\csharp\MyCqu\MyCqu\bin\Debug\net6.0\MyCqu.pdb
 D:\Code\csharp\MyCqu\MyCqu\bin\Debug\net6.0\Microsoft.OpenApi.dll
 D:\Code\csharp\MyCqu\MyCqu\bin\Debug\net6.0\Swashbuckle.AspNetCore.Swagger.dll
@@ -49,6 +48,7 @@ D:\Code\csharp\MyCqu\MyCqu\obj\Debug\net6.0\staticwebassets.development.json
 D:\Code\csharp\MyCqu\MyCqu\obj\Debug\net6.0\scopedcss\bundle\MyCqu.styles.css
 D:\Code\csharp\MyCqu\MyCqu\obj\Debug\net6.0\MyCqu.csproj.CopyComplete
 D:\Code\csharp\MyCqu\MyCqu\obj\Debug\net6.0\MyCqu.dll
-D:\Code\csharp\MyCqu\MyCqu\obj\Debug\net6.0\ref\MyCqu.dll
+D:\Code\csharp\MyCqu\MyCqu\obj\Debug\net6.0\refint\MyCqu.dll
 D:\Code\csharp\MyCqu\MyCqu\obj\Debug\net6.0\MyCqu.pdb
 D:\Code\csharp\MyCqu\MyCqu\obj\Debug\net6.0\MyCqu.genruntimeconfig.cache
+D:\Code\csharp\MyCqu\MyCqu\obj\Debug\net6.0\ref\MyCqu.dll

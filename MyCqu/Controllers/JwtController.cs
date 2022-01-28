@@ -1,6 +1,8 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using System.Net.Http.Headers;
 using System.Security.Cryptography;
 using System.Text;
+using System.Text.Json;
 using System.Text.Json.Nodes;
 using System.Text.RegularExpressions;
 
@@ -55,6 +57,15 @@ public class JwtController : ControllerBase
         var tokenResponse = await client.PostAsync("https://my.cqu.edu.cn/authserver/oauth/token", tokenContent);
         var rawToken = await tokenResponse.Content.ReadAsStringAsync();
         return Regex.Match(rawToken, @"[a-zA-z0-9_-]+\.[a-zA-z0-9_-]+\.[a-zA-z0-9_-]+").Value;
+    }
+
+    [HttpGet("Valid")]
+    public async Task<bool> Valid(string jwt)
+    {
+        var client = _factory.CreateClient();
+        client.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", jwt);
+        var response = await client.GetAsync("https://my.cqu.edu.cn/api/resourceapi/session/list");
+        return response.IsSuccessStatusCode;
     }
 }
 
