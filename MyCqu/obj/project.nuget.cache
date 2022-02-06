@@ -1,11 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "GzMm2IWtbDh+6TA5fnz5SDFPMiy3Rfwvds3B3qaMfCjwpj+oie/aJdOMf/HcWnBQ2rNeDEVbfXhTg8JY/j49Ug==",
+  "dgSpecHash": "SaOEKXj9cr9Bt4rTOPujmyWfFP3Cb59kNqhovSu+3GlAwVWFZYDt3im7JN2AYIxJdVmwVIPQ9AyFq3P0ajXoQA==",
   "success": true,
   "projectFilePath": "D:\\Code\\csharp\\MyCqu\\MyCqu\\MyCqu.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\34282\\.nuget\\packages\\microsoft.extensions.apidescription.server\\3.0.0\\microsoft.extensions.apidescription.server.3.0.0.nupkg.sha512",
     "C:\\Users\\34282\\.nuget\\packages\\microsoft.openapi\\1.2.3\\microsoft.openapi.1.2.3.nupkg.sha512",
+    "C:\\Users\\34282\\.nuget\\packages\\microsoft.visualstudio.azure.containers.tools.targets\\1.14.0\\microsoft.visualstudio.azure.containers.tools.targets.1.14.0.nupkg.sha512",
     "C:\\Users\\34282\\.nuget\\packages\\swashbuckle.aspnetcore\\6.2.3\\swashbuckle.aspnetcore.6.2.3.nupkg.sha512",
     "C:\\Users\\34282\\.nuget\\packages\\swashbuckle.aspnetcore.swagger\\6.2.3\\swashbuckle.aspnetcore.swagger.6.2.3.nupkg.sha512",
     "C:\\Users\\34282\\.nuget\\packages\\swashbuckle.aspnetcore.swaggergen\\6.2.3\\swashbuckle.aspnetcore.swaggergen.6.2.3.nupkg.sha512",
