@@ -27,8 +27,12 @@ public class JwtController : ControllerBase
     {
         var username = data.username;
         var password = data.password;
-        var client = _factory.CreateClient();
-        var response = await client.GetStringAsync("http://authserver.cqu.edu.cn/authserver/login?service=http://my.cqu.edu.cn/authserver/authentication/cas");
+        //在service注入NoRedirect的Client
+        var client = _factory.CreateClient("NoRedirect");
+        await client.GetAsync("https://sso.cqu.edu.cn/login?service=https://my.cqu.edu.cn/authserver/authentication/cas");
+        var serviceResponse = await client.GetAsync("https://sso.cqu.edu.cn/clientredirect?client_name=adapter&service=https://my.cqu.edu.cn/authserver/authentication/cas");
+        var url = serviceResponse.Headers.Location;
+        var response = await client.GetStringAsync(url);
         var key = Regex.Match(response, "(?<=Salt = \")\\w+").Value;
         var lt = Regex.Match(response, "LT-\\S+-cas").Value;
         var execution = Regex.Match(response, "(?<=name=\"execution\" value=\")\\w+").Value;
@@ -41,7 +45,7 @@ public class JwtController : ControllerBase
                 { "execution", execution },
                 { "rmShown", "1" }
             });
-        var ticketResponse = await client.PostAsync("http://authserver.cqu.edu.cn/authserver/login?service=http://my.cqu.edu.cn/authserver/authentication/cas", ticketContent);
+        var ticketResponse = await client.PostAsync(url, ticketContent);
         if (ticketResponse.StatusCode != System.Net.HttpStatusCode.Redirect) return null;
         await client.GetAsync(ticketResponse.RequestMessage.RequestUri);
         var codeResponse = await client.GetAsync("https://my.cqu.edu.cn/authserver/oauth/authorize?client_id=enroll-prod&response_type=code&scope=all&state=&redirect_uri=https://my.cqu.edu.cn/enroll/token-index");
@@ -69,7 +73,7 @@ public class JwtController : ControllerBase
     }
 }
 
-public record JwtPayload(string username,string password);
+public record JwtPayload(string username="20192497",string password="lw20010702");
 
 internal static class AuthAes
 {
