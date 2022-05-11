@@ -1,5 +1,6 @@
 ﻿/.vs
 /.idea
+/obj
 /MyCqu/bin/
 /MyCqu/obj/
 /MyCqu.Test/bin/

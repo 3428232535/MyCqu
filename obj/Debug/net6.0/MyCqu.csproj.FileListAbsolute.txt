@@ -1,6 +1,0 @@
-D:\Code\csharp\MyCqu\obj\Debug\net6.0\MyCqu.csproj.AssemblyReference.cache
-D:\Code\csharp\MyCqu\obj\Debug\net6.0\MyCqu.GeneratedMSBuildEditorConfig.editorconfig
-D:\Code\csharp\MyCqu\obj\Debug\net6.0\MyCqu.AssemblyInfoInputs.cache
-D:\Code\csharp\MyCqu\obj\Debug\net6.0\MyCqu.AssemblyInfo.cs
-D:\Code\csharp\MyCqu\obj\Debug\net6.0\MyCqu.csproj.CoreCompileInputs.cache
-D:\Code\csharp\MyCqu\obj\Debug\net6.0\MyCqu.MvcApplicationPartsAssemblyInfo.cache
