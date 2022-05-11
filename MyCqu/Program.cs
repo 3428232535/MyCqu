@@ -7,7 +7,6 @@ builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 builder.Services.AddHttpClient();
-builder.Services.AddHttpClient("NoRedirect",c => c.DefaultRequestHeaders.Add("User-Agent", "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/101.0.4951.54 Safari/537.36 Edg/101.0.1210.39")).ConfigureHttpMessageHandlerBuilder(handler => new SocketsHttpHandler { AllowAutoRedirect = false, UseCookies = true});
 builder.WebHost.UseUrls("http://*:5000");
 
 var app = builder.Build();

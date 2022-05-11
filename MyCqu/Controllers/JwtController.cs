@@ -27,8 +27,8 @@ public class JwtController : ControllerBase
     {
         var username = data.username;
         var password = data.password;
-        //在service注入NoRedirect的Client
-        var client = _factory.CreateClient("NoRedirect");
+        var client = _factory.CreateClient();
+        client.DefaultRequestHeaders.Add("User-Agent", "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/101.0.4951.54 Safari/537.36 Edg/101.0.1210.39");
         await client.GetAsync("https://sso.cqu.edu.cn/login?service=https://my.cqu.edu.cn/authserver/authentication/cas");
         var serviceResponse = await client.GetAsync("https://sso.cqu.edu.cn/clientredirect?client_name=adapter&service=https://my.cqu.edu.cn/authserver/authentication/cas");
         var url = serviceResponse.Headers.Location;
@@ -47,7 +47,6 @@ public class JwtController : ControllerBase
             });
         var ticketResponse = await client.PostAsync(url, ticketContent);
         if (ticketResponse.StatusCode != System.Net.HttpStatusCode.Redirect) return null;
-        await client.GetAsync(ticketResponse.RequestMessage.RequestUri);
         var codeResponse = await client.GetAsync("https://my.cqu.edu.cn/authserver/oauth/authorize?client_id=enroll-prod&response_type=code&scope=all&state=&redirect_uri=https://my.cqu.edu.cn/enroll/token-index");
         var code = Regex.Match(codeResponse.RequestMessage.RequestUri.ToString(), "(?<=code=)\\w+").Value;
         var tokenContent = new FormUrlEncodedContent(new Dictionary<string, string>()
@@ -60,6 +59,7 @@ public class JwtController : ControllerBase
             });
         var tokenResponse = await client.PostAsync("https://my.cqu.edu.cn/authserver/oauth/token", tokenContent);
         var rawToken = await tokenResponse.Content.ReadAsStringAsync();
+        await client.GetAsync("http://authserver.cqu.edu.cn/authserver/logout?service=https%3A%2F%2Fsso.cqu.edu.cn%2Flogin%3Fservice%3Dhttps%3A%2F%2Fmy.cqu.edu.cn%2Fauthserver%2Fauthentication%2Fcas"); 
         return Regex.Match(rawToken, @"[a-zA-z0-9_-]+\.[a-zA-z0-9_-]+\.[a-zA-z0-9_-]+").Value;
     }
 
@@ -71,9 +71,16 @@ public class JwtController : ControllerBase
         var response = await client.GetAsync("https://my.cqu.edu.cn/api/resourceapi/session/list");
         return response.IsSuccessStatusCode;
     }
+
+    [HttpGet("Logout")]
+    public async Task Logout()
+    {
+        var client = _factory.CreateClient();
+        await client.GetAsync("http://authserver.cqu.edu.cn/authserver/logout?service=https%3A%2F%2Fsso.cqu.edu.cn%2Flogin%3Fservice%3Dhttps%3A%2F%2Fmy.cqu.edu.cn%2Fauthserver%2Fauthentication%2Fcas");
+    }
 }
 
-public record JwtPayload(string username="20192497",string password="lw20010702");
+public record JwtPayload(string username,string password);
 
 internal static class AuthAes
 {
